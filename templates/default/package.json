@@ -1,0 +1,15 @@
+{
+  "name": "my-dace-app",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "dace start",
+    "build": "dace build",
+    "start:prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "dace": "latest",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
