@@ -4,13 +4,13 @@ import { Head } from 'dace';
 import Header from '../../components/Header';
 import favicon from './favicon.png';
 
-const DefaultLayout = props => (
+const DefaultLayout = ({ children }) => (
   <div>
     <Head>
       <link rel="icon" type="image/png" href={favicon} />
     </Head>
     <Header />
-    {props.children}
+    {children}
   </div>
 );
 

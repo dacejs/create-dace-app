@@ -13,7 +13,7 @@
     "url": "https://github.com/dacejs/dace/issues"
   },
   "scripts": {
-    "release": "standard-version && npm publish"
+    "release": "standard-version --release-as patch && npm publish"
   },
   "bin": {
     "create-dace-app": "./bin/create-dace-app"
