@@ -1,6 +1,6 @@
 {
   "name": "create-dace-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create dace apps with no build configuration.",
   "engines": {
     "node": ">=10"
