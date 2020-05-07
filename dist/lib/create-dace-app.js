@@ -24,7 +24,6 @@ function installWithMessageFactory(opts) {
         'react-dom',
         'dace',
         'dace-plugin-redux',
-        'eslint-config-qunar-react',
         'morgan',
         'qs',
         'statsd-client',
