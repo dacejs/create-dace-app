@@ -1,0 +1,12 @@
+.DS_Store
+.env
+npm-debug.log
+/node_modules
+yarn-error.log
+.idea/
+.gitconfig
+.code-workspace
+
+/dist
+/prd
+/logs

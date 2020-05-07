@@ -1,0 +1,3 @@
+# 不支持 IE11 以下浏览器
+defaults
+not ie <= 10

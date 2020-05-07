@@ -1,0 +1,29 @@
+{
+  "name": "<%=projectName%>",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rm -rf prd && dace build",
+    "start:prod": "npm run build && node dist/server.js",
+    "start": "dace start",
+    "precommit": "lint-staged",
+    "lint": "eslint --report-unused-disable-directives \"src/**/*.{ts,js}\"",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,js,tsx,jsx}": "eslint --report-unused-disable-directives",
+    "src/**/*.?(s)css": "stylelint"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "eslint-config-qunar-react": "^1.1.21"
+  }
+}
